@@ -76,7 +76,7 @@
           # 这一行在 preset 自己的工具层里 restrict 掉这些名字，所以只有
           # 本模式看不见，别的模式不受影响。
           - id: shell-fence
-            name: '@local/dsh-chat-preset'
+            name: 'dsh-chat-modes'
 
           # 时间锚点：靠检索回答"最近/今年/现在"必须有当前时间。它走 pre-step
           # 的 user-role 消息，不是系统提示词，所以 includeRuntimeContext: false
@@ -207,7 +207,7 @@
 
           # 同上的 shell 围栏（两个模式各挂一份，互不影响）。
           - id: shell-fence
-            name: '@local/dsh-chat-preset'
+            name: 'dsh-chat-modes'
 
           - id: time-context
             name: '@deepseek-ai/dsh-time-context'

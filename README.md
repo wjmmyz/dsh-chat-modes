@@ -11,17 +11,22 @@
 
 ## 安装
 
-这是一个 DSH bundle，通过 profile 安装：
+这是一个 DSH bundle。从 npm 安装：
 
 ```sh
-# 从本地目录安装
-dsh plugin --profile <profile> add link:/path/to/chat-mode
+dsh plugin --profile <profile> add dsh-chat-modes
+```
+
+也可以从源码目录或本地 tarball 安装：
+
+```sh
+dsh plugin --profile <profile> add link:/path/to/dsh-chat-modes
+dsh plugin --profile <profile> add file:/path/to/dsh-chat-modes-1.0.0.tgz
 ```
 
 或在 Web 界面：**插件（Plugins） → 添加插件 → 选择本地目录**。
 
 安装后新会话选择器与 设置 → 通用 里会出现「对话」和「对话·鲸鱼娘」。
-
 
 ## 看图规则
 

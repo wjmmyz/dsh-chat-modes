@@ -1,24 +1,50 @@
 {
-  "name": "@local/dsh-chat-preset",
+  "name": "dsh-chat-modes",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
-  "description": "对话模式：还原 DeepSeek 网页端的纯对话环境（「对话」与「对话·鲸鱼娘」两个模式），只保留联网检索、只读文件与图片、时间锚点与 Office 文档解析。",
+  "description": "对话模式 for DeepSeek Harness: two agent presets restoring the DeepSeek web chat surface — web search, read-only files and images, a current-time anchor, and Office parsing, with a shell fence for host-global shell tools.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-preset",
+    "chat",
+    "persona"
+  ],
+  "license": "MIT",
+  "author": "wjmmyz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjmmyz/dsh-chat-modes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wjmmyz/dsh-chat-modes/issues"
+  },
+  "homepage": "https://github.com/wjmmyz/dsh-chat-modes#readme",
+  "engines": {
+    "dsh": ">=0.2.2-rc.2"
+  },
   "exports": {
     ".": "./index.js",
     "./locale/*.json": "./locale/*.json",
-    "./icon": "./icon.svg"
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
   },
   "files": [
     "index.js",
     "cordis.patch.yml",
     "locale/*.json",
     "README.md",
+    "LICENSE",
     "icon.svg"
   ],
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
