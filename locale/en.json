@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chat modes",
+    "description": "Adds two Chat agent presets that share one pure-conversation environment: web search and fetch, read-only file access, detailed image description rules, a current-time anchor, and Office document parsing, with no file writes, shell, delegation, or configuration changes. 对话 keeps the plain web-assistant persona; 对话·鲸鱼娘 uses a gentle, wife-like Whale-chan persona with a light tsundere streak instead. Pick either in the new-session picker, or set it as the default in Settings. Reading a file needs its full path because workspace search tools are not mounted. Session skills come only from the bundled Office set. Preset names stay in Chinese in every locale, since the host does not translate custom preset metadata."
+  }
+}
