@@ -1,0 +1,24 @@
+{
+  "name": "@local/dsh-chat-preset",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "对话模式：还原 DeepSeek 网页端的纯对话环境（「对话」与「对话·鲸鱼娘」两个模式），只保留联网检索、只读文件与图片、时间锚点与 Office 文档解析。",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
